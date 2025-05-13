@@ -24,8 +24,8 @@ for BAM in /home/mane9823/Genome-Analysis/analyses/RNA_analyses/02_RNA_mapping/m
     htseq-count \
         --format=bam \
         --order=pos \
-        --type=gene \
-        --idattr=ID \
+        --type=CDS \
+        --idattr=locus_tag \
         --mode=union \
         --stranded=reverse \
         "$BAM" "$GFF_FILE" > "$OUTPUT_DIR/${BASENAME}_counts.txt"
