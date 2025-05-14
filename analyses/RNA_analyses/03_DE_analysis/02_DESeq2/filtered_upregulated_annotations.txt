@@ -1,0 +1,21 @@
+locus_tag	ftype	length_bp	gene	EC_number	COG	product
+EFEADKAH_00308	CDS	498				hypothetical protein
+EFEADKAH_00314	CDS	894	yghA	1.-.-.-		putative oxidoreductase YghA
+EFEADKAH_00580	CDS	915	ydhF	1.-.-.-	COG4989	Oxidoreductase YdhF
+EFEADKAH_00581	CDS	1275	purD	6.3.4.13	COG0151	Phosphoribosylamine--glycine ligase
+EFEADKAH_00582	CDS	1536	purH			Bifunctional purine biosynthesis protein PurH
+EFEADKAH_00583	CDS	579	purN	2.1.2.2		Phosphoribosylglycinamide formyltransferase
+EFEADKAH_00584	CDS	1053	purM	6.3.3.1	COG0150	Phosphoribosylformylglycinamidine cyclo-ligase
+EFEADKAH_00585	CDS	1440	purF	2.4.2.14		Amidophosphoribosyltransferase
+EFEADKAH_00586	CDS	2223	purL	6.3.5.3	COG0046	Phosphoribosylformylglycinamidine synthase subunit PurL
+EFEADKAH_00587	CDS	672	purQ	6.3.5.3	COG0047	Phosphoribosylformylglycinamidine synthase subunit PurQ
+EFEADKAH_00588	CDS	255	purS	6.3.5.3	COG1828	Phosphoribosylformylglycinamidine synthase subunit PurS
+EFEADKAH_00589	CDS	729	purC	6.3.2.6	COG0152	Phosphoribosylaminoimidazole-succinocarboxamide synthase
+EFEADKAH_00955	CDS	276				hypothetical protein
+EFEADKAH_00981	CDS	252				hypothetical protein
+EFEADKAH_00983	CDS	189				hypothetical protein
+EFEADKAH_01569	CDS	510	queT_2		COG4708	Queuosine precursor transporter QueT
+EFEADKAH_02307	CDS	1662	dppE		COG4166	Dipeptide-binding protein DppE
+EFEADKAH_02308	CDS	348				hypothetical protein
+EFEADKAH_02323	CDS	1110	msmX	7.5.2.-	COG3839	Oligosaccharides import ATP-binding protein MsmX
+EFEADKAH_02946	CDS	405	ohrB_2		COG1764	Organic hydroperoxide resistance protein OhrB

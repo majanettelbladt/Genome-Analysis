@@ -1,0 +1,21 @@
+locus_tag	ftype	length_bp	gene	EC_number	COG	product
+EFEADKAH_00192	CDS	753	glcR		COG1349	HTH-type transcriptional repressor GlcR
+EFEADKAH_00193	CDS	915	lacC_1	2.7.1.144	COG1105	Tagatose-6-phosphate kinase
+EFEADKAH_00194	CDS	1932	fruA_1		COG1299	PTS system fructose-specific EIIABC component
+EFEADKAH_00344	CDS	1530	ahpF	1.6.99.3		NADH dehydrogenase
+EFEADKAH_00345	CDS	564	ahpC	1.11.1.15	COG0450	Alkyl hydroperoxide reductase C
+EFEADKAH_00831	CDS	786	accA	2.1.3.15	COG0825	Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha
+EFEADKAH_00832	CDS	870	accD	2.1.3.15	COG0777	Acetyl-coenzyme A carboxylase carboxyl transferase subunit beta
+EFEADKAH_00833	CDS	1380	cfiB	6.4.1.7	COG0439	2-oxoglutarate carboxylase small subunit
+EFEADKAH_00834	CDS	420	fabZ_2	4.2.1.59	COG0764	3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabZ
+EFEADKAH_00835	CDS	477	accB			Biotin carboxyl carrier protein of acetyl-CoA carboxylase
+EFEADKAH_00836	CDS	1236	fabF	2.3.1.179	COG0304	3-oxoacyl-[acyl-carrier-protein] synthase 2
+EFEADKAH_00837	CDS	738	fabG_2	1.1.1.100		3-oxoacyl-[acyl-carrier-protein] reductase FabG
+EFEADKAH_00838	CDS	918	fabD	2.3.1.39	COG0331	Malonyl CoA-acyl carrier protein transacylase
+EFEADKAH_00839	CDS	225	acpA		COG0236	Acyl carrier protein
+EFEADKAH_00840	CDS	963	fabH	2.3.1.180	COG0332	3-oxoacyl-[acyl-carrier-protein] synthase 3
+EFEADKAH_00841	CDS	441				hypothetical protein
+EFEADKAH_01340	CDS	189				hypothetical protein
+EFEADKAH_01773	CDS	1878				hypothetical protein
+EFEADKAH_01807	CDS	363				hypothetical protein
+EFEADKAH_02599	CDS	918	glyQ	6.1.1.14	COG0752	Glycine--tRNA ligase alpha subunit
