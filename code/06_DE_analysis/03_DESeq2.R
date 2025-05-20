@@ -69,8 +69,26 @@ abline(h=c(-1,1), col="dodgerblue", lwd=2)
 
 # ------------------------ 5. Significant genes --------------------------
 
-sign_genes <- subset(res, padj < 0.001 & abs(log2FoldChange) > 1)
-summary(sign_genes)
+# Filter significant genes based on the article's criteria: q < 0.001 and fold change > 2 or < 0.5
+sign_genes <- res[which(res$padj < 0.001 & abs(res$log2FoldChange) > 1), ]
+
+# Print total number of significant genes according to the criteria
+cat("Number of significantly differentially expressed genes (padj < 0.001 and |log2FC| > 1):", nrow(sign_genes), "\n")
+
+# Separate into up- and downregulated genes
+upregulated <- sign_genes[sign_genes$log2FoldChange > 1, ]
+downregulated <- sign_genes[sign_genes$log2FoldChange < -1, ]
+
+cat("Number of upregulated genes:", nrow(upregulated), "\n")
+cat("Number of downregulated genes:", nrow(downregulated), "\n")
+
+# Save results to files
+write.table(upregulated, "./significant_upregulated_genes.txt", sep="\t", row.names=TRUE, quote=FALSE)
+write.table(downregulated, "./significant_downregulated_genes.txt", sep="\t", row.names=TRUE, quote=FALSE)
+
+# Optionally save the full list of significant genes as well
+write.table(sign_genes, "./significant_genes_all.txt", sep="\t", row.names=TRUE, quote=FALSE)
+
 
 # ------------------------ 6. Heatmap --------------------------
 
