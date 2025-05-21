@@ -1,0 +1,58 @@
+# folders_structure.txt
+
+Project Structure for Genome-Analysis
+
+analyses/
+├── DNA_analyses/
+│   ├── 01_preprocessing/                         # Quality control and trimming of DNA reads
+│   │   ├── fastqc_raw/                           # FastQC reports for raw DNA reads
+│   │   └── fastqc_trim/                          # FastQC reports after trimming
+│   ├── 02_genome_assembly/                       # Genome assemblies (PacBio and hybrid)
+│   │   ├── 01_pacbio/                            # PacBio assembly using Canu
+│   │   │   ├── assembly_results/                 # Final contigs and index files
+│   │   │   ├── mummer_output/                    # MUMmerplot comparison with reference genome
+│   │   │   └── quast_output/                     # QUAST evaluation of the PacBio assembly
+│   │   └── 02_nanopore_illumina/                 # Hybrid assembly using SPAdes
+│   │       ├── assembly_results/                 # Final contigs and scaffolds
+│   │       └── quast_output/                     # QUAST evaluation of the hybrid assembly
+│   └── 03_structural_annotation/                 # Genome annotation
+│       ├── blast/                                # BLAST alignments and images
+│       └── prokka_output/                        # Files from Prokka (GFF, GBK, FAA, etc.)
+
+RNA_analyses/
+├── 01_preprocessing/                             # Quality control and trimming of RNA-Seq reads
+│   ├── fastqc_raw/                               # FastQC before trimming (split by BH and Serum)
+│   ├── fastqc_trimmed/                           # FastQC after trimming (split by BH and Serum)
+│   └── trimmed_BH/ and trimmed_serum/            # Trimmed reads
+├── 02_RNA_mapping/                               # Mapping RNA reads to genome using BWA
+│   ├── BWA_indexed_genome_files/                 # Genome index for BWA
+│   ├── mapped_RNA-seq_BH/                        # BAM files and stats for BH samples
+│   └── mapped_RNA-seq_Serum/                     # BAM files and stats for Serum samples
+└── 03_DE_analysis/                               # Differential expression analysis
+    ├── 01_HTseq/                                 # HTSeq read count output
+    │   ├── RNA-seq_BH/                            # Counts for BH samples
+    │   └── RNA-seq_Serum/                         # Counts for Serum samples
+    └── 02_DESeq2/                                # DESeq2 results and visualizations
+        ├── PCA_plot.png
+        ├── MA plots (Rplots-*.png, .pdf)
+        ├── heatmaps of top genes
+        └── filtered_up/downregulated_annotations.txt
+
+code/                                              # All SLURM and analysis scripts
+├── 01_DNA_preprocessing/                         # FastQC and Trimmomatic scripts for DNA
+├── 02_Genome_Assembly/                           # Scripts for Canu, SPAdes, MUMmer
+├── 03_Annotation/                                # Prokka annotation script
+├── 04_RNA_preprocessing/                         # FastQC and Trimmomatic for RNA
+├── 05_RNA_mapping/                               # BWA mapping scripts
+├── 06_DE_analysis/                               # HTSeq, DESeq2, plots, annotation
+└── output_files/                                 # Output logs from SLURM jobs
+
+data/
+├── metadata/                                     # Metadata for the samples
+├── raw_data/                                     # Links to original Zhang et al. data
+│   ├── genomics_data/ (symbolic link)
+│   └── transcriptomics_data/ (symbolic link)
+├── reference_data/                               # Reference genome and BLAST databases
+└── trimmed_data/                                 # Trimmed reads (DNA and RNA, split by sample type)
+
+
