@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-print('hej')
 # Ange sökvägen till din mapp med HTSeq-count-filer
 path = "/Users/majanettelbladt/Desktop/RNA-Seq"
 
